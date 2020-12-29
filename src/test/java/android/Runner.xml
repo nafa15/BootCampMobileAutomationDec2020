@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Selenium Test Suite" parallel="false">
+
+    <parameter name="platform" value="android"/>
+    <parameter name="platformVersion" value="9"/>
+    <parameter name="udid" value="520099138df3b511"/>
+    <parameter name="deviceName" value=""/>
+    <parameter name="automationName" value=""/>
+    <parameter name="appPackage" value="com.tdbank"/>
+    <parameter name="appActivity" value="com.td.dcts.android.us.app.SplashScreenActivity"/>
+    <parameter name="bundleId" value=""/>
+
+
+    <test name="Android tests">
+        <classes>
+            <class name="android.tests.RegressionTests"/>
+        </classes>
+    </test>
+</suite>
